@@ -122,8 +122,6 @@ Sau khi có tệp `docker-compose.yml`, bạn sử dụng các lệnh sau trong 
     docker compose unpause [tên_service...]
     ```
 
----
-
 ## Phần 3: Tìm Hiểu Sâu Về Các Thành Phần Cấu Hình `docker-compose.yml`
 
 Để kiểm soát ứng dụng đa container một cách hiệu quả, bạn cần hiểu rõ các tùy chọn cấu hình chính trong tệp `docker-compose.yml`.
@@ -279,8 +277,6 @@ Mạng là yếu tố then chốt để các container giao tiếp với nhau.
         # ...
     ```
 *   **Giải pháp cho việc chờ sẵn sàng:** Sử dụng các kỹ thuật như `healthcheck` (sẽ đề cập ở phần sau), script `wait-for-it.sh`, hoặc xử lý logic retry trong ứng dụng.
-
----
 
 ## Phần 4: Tính Năng Nâng Cao và Kỹ Thuật Hữu Ích
 
@@ -448,7 +444,3 @@ Khi dùng `build` để Compose tự xây dựng image:
     *   Cấu hình ứng dụng log ra STDOUT/STDERR.
     *   Sử dụng `docker compose logs [-f] [--tail=N] [service_name]` để xem và theo dõi log.
 *   **Lợi ích:** Debug dễ dàng, chuẩn mực cho container.
-
----
-
-**Hoàn thành!**
